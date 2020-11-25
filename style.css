@@ -1,14 +1,89 @@
+body {
+    background-color: coral;
+}
+
 h1 {
-    color: #111;
+    color: rgb(218, 252, 97);
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 275px;
     font-weight: bold;
     letter-spacing: -1px;
     line-height: 1;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    border-bottom: 5px dashed yellow;
+    border-top: 5px dashed yellow;
+    border-radius: 200px;
 }
 
+h3 {
+    margin: 20px;
+    padding: 10px;
+    background-color: rosybrown;
+    border: 2px solid;
+}
+
+#first {
+    text-align: left;
+}
+
+#second {
+    text-align: center;
+}
+
+#third {
+    text-align: right;
+}
+
+#ugly {
+    background-color: purple;
+}
+
+#second-ugly {
+    background-color: rgb(100, 75, 100);
+}
+
+#ugly, #second-ugly {
+    padding: 0;
+    margin: 0;
+    color: rgb(218, 252, 97);
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    line-height: 1;
+    text-align: center;
+    border: 3px solid rgb(112, 112, 58);
+    border-radius: 30px;
+}
+
+h1:hover {
+    background-color: skyblue;
+}
+
+/* 
+#ugly-border, #second-ugly-border {
+    background-color: blue;
+    padding: 5px;
+    margin: 0;
+    border: 3px solid rgb(112, 112, 58);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px;
+} */
+
+/* #ugly-border {
+    background-color: blue;
+    padding: 5px;
+    margin: 0;
+    border: 3px solid rgb(112, 112, 58);
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px ;
+} */
+
 p {
+    margin: 0 25px;
+    padding: 0 25px;
     color: #685206;
     font-family: 'Helvetica Neue', sans-serif;
     font-size: 14px;
@@ -16,6 +91,17 @@ p {
     margin: 0 0 24px;
     text-align: justify;
     text-justify: inter-word;
+    text-decoration-line: overline; 
+    text-decoration-style: double;
+}
+
+p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+p::first-line {
+    background-color: yellow;
 }
 
 textarea {
@@ -24,18 +110,55 @@ textarea {
     height: 150px;
 }
 
+#lorem {
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid ;
+}
+
+#push {
+    margin: 20px;
+}
+
+#push-span {
+    background-color: seashell;
+}
+
+#arguments {
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid;
+}
+
+#things {
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid;
+}
+
 ul, ol {
     margin: 20px;
     padding: 0;
+    border-radius: 30px;
+}
+
+ul {
+    text-align: center;
+}
+
+ol {
+    text-align: right;
 }
 
 li {
     font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
     border-bottom: 1px solid #ccc;
 }
-   
-li:last-child {
-    border: none;
+
+li:nth-child(odd) {
+    color: white;
+    background-color: black;
+    border: 2px solid cornflowerblue;
 }
 
 form {
