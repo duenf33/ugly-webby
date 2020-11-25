@@ -1,10 +1,15 @@
+:root {
+    --five-px-blk: 5px 5px 5px black;
+    --five-40-blk-inset: 5px 5px 40px black inset;
+}
+
 body {
     background-color: coral;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 h1 {
     color: rgb(218, 252, 97);
-    font-family: 'Helvetica Neue', sans-serif;
     font-size: 275px;
     font-weight: bold;
     letter-spacing: -1px;
@@ -26,14 +31,17 @@ h3 {
 
 #first {
     text-align: left;
+    box-shadow: var(--five-px-blk);
 }
 
 #second {
     text-align: center;
+    box-shadow: var(--five-px-blk);
 }
 
 #third {
     text-align: right;
+    box-shadow: var(--five-px-blk);
 }
 
 #ugly {
@@ -45,47 +53,20 @@ h3 {
 }
 
 #ugly, #second-ugly {
-    padding: 0;
-    margin: 0;
-    color: rgb(218, 252, 97);
-    font-family: 'Helvetica Neue', sans-serif;
     font-size: 75px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    line-height: 1;
-    text-align: center;
     border: 3px solid rgb(112, 112, 58);
     border-radius: 30px;
 }
 
 h1:hover {
     background-color: skyblue;
+    transition: background-color .9s;
 }
-
-/* 
-#ugly-border, #second-ugly-border {
-    background-color: blue;
-    padding: 5px;
-    margin: 0;
-    border: 3px solid rgb(112, 112, 58);
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px;
-} */
-
-/* #ugly-border {
-    background-color: blue;
-    padding: 5px;
-    margin: 0;
-    border: 3px solid rgb(112, 112, 58);
-    border-radius: 30px;
-    box-shadow: 5px 5px 5px ;
-} */
 
 p {
     margin: 0 25px;
     padding: 0 25px;
     color: #685206;
-    font-family: 'Helvetica Neue', sans-serif;
     font-size: 14px;
     line-height: 24px;
     margin: 0 0 24px;
@@ -113,11 +94,15 @@ textarea {
 #lorem {
     margin: 20px;
     padding: 10px;
-    border: 3px solid ;
+    border: 3px solid;
+    box-shadow: var(--five-px-blk);
 }
 
 #push {
-    margin: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid;
+    box-shadow: var(--five-40-blk-inset);
 }
 
 #push-span {
@@ -128,12 +113,15 @@ textarea {
     margin: 20px;
     padding: 10px;
     border: 3px solid;
+    box-shadow: var(--five-px-blk);
 }
 
 #things {
-    margin: 20px;
+    margin-top: 20px;
     padding: 10px;
     border: 3px solid;
+    box-shadow: var(--five-40-blk-inset);
+
 }
 
 ul, ol {
@@ -168,7 +156,7 @@ form {
     border:1px #CCC solid;
     padding:10px;
 }
-    
+
 input, textarea {
     padding:5px;
     margin:5px
